@@ -16,3 +16,34 @@ def readList(myNameList):
     return(myList)
 
 
+# Randomly return 3 items from a list.
+def newSelectors(myList):
+    return(random.sample(myList, 3))
+
+
+
+def newSelectorDictionnary():
+    domain = readList('/root/domainList.txt')
+    for dn in domain:
+        print(dn)           # INTRUMENTATION
+        match dn:
+            case 'decadent.art':
+                nameList = '/root/us-state-capitals.txt'
+            case 'schoepfer.nom.fr':
+                nameList = '/root/fr-regional-capitals.txt'
+            case _:
+                nameList = '/root/eu-capitals.txt'
+        print(nameList)     # INTRUMENTATION
+        #print(getPublicKey())
+        selector = newSelectors(readList(nameList))
+        print(newSelector)  # INSTRUMENTATION
+
+
+def main():
+    newSelectorDictionnary()
+
+
+
+if __name__ == '__main__':
+	main()
+    
