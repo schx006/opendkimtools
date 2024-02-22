@@ -40,7 +40,7 @@ def newSelectorDictionnary():
 	print(nameList)		# INTRUMENTATION
 	# Create a list of selector names
 	selector = newSelectors(readList(nameList))
-	print(newSelector)	# INSTRUMENTATION
+	print(selector)	# INSTRUMENTATION
 
 
 
