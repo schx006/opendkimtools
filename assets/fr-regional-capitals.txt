@@ -1,0 +1,12 @@
+bordeaux
+dijon
+lille
+lyon
+marseille
+nantes
+orleans
+paris
+rennes
+rouen
+strasbourg
+toulouse
