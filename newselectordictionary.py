@@ -28,22 +28,22 @@ def newSelectors(myList):
 # a list of their selectors.
 def newSelectorDictionnary():
 	# Read the list of domain names.
-	domain = readList('assets/domainList.txt')
+	myDomainList = readList('assets/domains.txt')
 	# For each domain, choose a list of words from which
 	# the names of the selectors are randomly drawn.
-	for dn in domain:
+	for dn in myDomainList:
 		print(dn)	# INTRUMENTATION
 		match dn:
 			case 'example.com':
-				nameList = 'assets/us-state-capitals.txt'
+				myRefList = 'assets/us-state-capitals.txt'
 			case 'example.net':
-				nameList = 'assets/fr-regional-capitals.txt'
+				myRefList = 'assets/fr-regional-capitals.txt'
 			case _:
-				nameList = 'assets/eu-capitals.txt'
-	print(nameList)		# INTRUMENTATION
+				myRefList = 'assets/eu-capitals.txt'
+	print(myRefList)		# INTRUMENTATION
 	# Create a list of selector names
-	selector = newSelectors(readList(nameList))
-	print(selector)	# INSTRUMENTATION
+	mySelectorList = newSelectors(readList(myRefList))
+	print(mySelectorList)	# INSTRUMENTATION
 
 
 
