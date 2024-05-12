@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 # vim:fileencoding=utf-8
 
+# Copyright (C) 2024 Xavier Schoepfer
+# GNU GENERAL PUBLIC LICENSE Version 3
+
 
 
 import re, random
@@ -31,9 +34,9 @@ def newSelectorDictionnary():
 	for dn in domain:
 		print(dn)	# INTRUMENTATION
 		match dn:
-			case 'decadent.art':
+			case 'example.com':
 				nameList = 'assets/us-state-capitals.txt'
-			case 'schoepfer.nom.fr':
+			case 'example.net':
 				nameList = 'assets/fr-regional-capitals.txt'
 			case _:
 				nameList = 'assets/eu-capitals.txt'
